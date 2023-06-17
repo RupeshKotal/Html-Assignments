@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "Open Sans", sans-serif;
+         display: flex;
+        justify-content: center;
+        /* background-color: aqua; */
+        }
+
+        .container{
+            max-width: 1200px;
+            width: 100%;
+            /* background-color: aquamarine; */
+        }
+        nav{
+            display: flex;
+            padding: 0px 25px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        .logosection{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logosection > img{
+            width: 30px;
+            height: 30px;
+        }
+
+        .buttonsection{
+            display: flex;
+            gap: 50px;
+
+        }
+
+        .button1{
+            border: 0;
+            font-size: 15px;
+            background-color: transparent;
+            font-weight: 300;
+            color: blue;
+        }
+        
+        .button2{
+            padding: 10px 20px;
+            background-color: transparent;
+            font-size: 15px;
+            font-weight: 300;
+            color: blue;
+            border: 0.5px solid black;
+            border-radius: 4px;
+        }
+
+        .button3{
+            padding: 10px 20px;
+            background-color: #4d4dd3;
+            font-size: 15px;
+            font-weight: 300;
+            color: #0a0a0a;
+            border: 0.5px solid black;
+            border-radius: 4px;
+        }
+
+        .main{
+            display: flex;
+            gap: 100px;
+        }
+
+        .sec1{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px 30px;
+        }
+
+        .sec1 > h1{
+            font-size: 50px;
+            margin-bottom: 0px;
+        } 
+
+        .sec1 > p{
+            margin: 10px 0px;
+        }
+
+        .home-button{
+            display: flex;
+            margin-top: 30px;
+            gap: 50px;
+        }
+
+        .sec2{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .sec2 > img {
+        width: 100%;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logosection">
+                <img src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97" alt="logo">
+                <p>Gmail</p>
+            </div>
+            <div class="buttonsection">
+                <button class="button1">For Work</button>
+                <button class="button2">Sign In</button>
+                <button class="button3">Create an account</button>
+            </div>
+        </nav>
+        <hr>
+        <section class="main">
+
+            <section class="sec1">
+              <h1>Secure, smart, and easy to use email</h1> 
+              <p>
+                Get more done with Gmail. Now integrated with Google Chat, Google
+                Meet, and more, all in one place.
+              </p>
+              <section class="home-button">
+                <button class="button3">Create and account</button>
+                <button class="button1">For work</button>
+              </section> 
+            </section>
+            <section class="sec2">
+                <img
+            src="https://lh3.googleusercontent.com/PWXM4hp9lRRezHTV86SqLwhRQMz4_Lk08jll3GkWBvBZy_Uk6kvUvwIrVilwaIW2mHZJoccchG6o9a5UdOJEwQPf9oJGmOGSglo3VW0=rw-e365-w2880"
+            alt="Image"
+          />
+            </section>
+        </section>
+    </div>
+</body>
+</html>
