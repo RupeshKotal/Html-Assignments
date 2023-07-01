@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+        }
+        .contain{
+            display: grid;
+            /* height: 100vh; */
+            grid-template-columns: 50% 40% 10%;
+            gap: 20px 0px;
+        }
+
+
+        .item1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 160px;
+        }
+
+        h1{
+            font-weight: 500;
+            font-size: 50px;
+            align-self: flex-start;
+            margin-bottom: 30px;
+
+        }
+
+        p{
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        button{
+            align-self: flex-start;
+            padding: 10px 30px;
+            border-radius: 5px;
+            background-color: #0a0a0a;
+            color: #fffafa;
+            cursor: pointer;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+
+        .item3{
+            background-color: yellow;
+        }
+
+        .menu{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: space-between;
+            align-content: center;
+            padding: 10px;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            /* justify-content: space-around; */
+            gap: 60px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+       .menu > button{
+            justify-self: flex-end;
+            padding: 5px 50px;
+            background-color: #31b34d;
+            color: #fffafa;
+            border-radius: 3px;
+        }
+
+        .foot{
+            background-color:rgb(121, 38, 38);
+            display: grid;
+            grid-template-columns: auto auto auto;
+            max-height:900px;
+            width: 100%;
+            margin-top: 20px;
+            justify-content: space-evenly;
+            color: #f8f4f4;
+            
+        }
+
+        .itm{
+            
+            width: 300px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;   
+            
+        }
+
+        .imges{
+            height: 180px;
+            width: 200px;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+
+        h3 +  p{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .logo{
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="menu">
+        <div><img src="https://png.pngtree.com/template/20191120/ourmid/pngtree-red-chilli-food-logo-design-your-company-image_334205.jpg" alt="" class="logo"></div>
+        <nav>
+            <div class="home"><a href="#">Home</a></div>
+            <div class="About"><a href="#">About</a></div>
+            <div class="contact"><a href="#">Contact</a></div>
+        </nav>
+        <button class="login">Login</button>
+    </div>
+    <div class="contain">
+        <div class="item item1">
+            <h1>Healthy food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus earum quia explicabo odit minus quasi quae libero vel sequi assumenda accusamus non repudiandae natus dolor sint, nobis tempore aperiam totam voluptate praesentium et ipsam laudantium cum. Aliquid eum perferendis porro, earum illo perspiciatis labore quae! Consequuntur, optio consequatur! Ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo blanditiis quia nisi veritatis dolorem, ipsam error velit facere ea quaerat?</p>
+
+            <button>Read more</button>
+        </div>
+        <div class="item item2"><img src="https://img.freepik.com/free-photo/vertical-view-spagetti-wooden-board-among-organic-vegetables-eggs-fallen-oil-bottle-pepper-black_140725-144563.jpg" alt=""></div>
+        <div class="item item3"></div>
+    </div>
+
+    <footer class="foot">
+        <div class="itm itm1"><img src="https://img.freepik.com/free-vector/delivery-service-illustrated_23-2148505081.jpg?size=626&ext=jpg" alt="" class="imges img1">
+        <h3>No minimum order</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, adipisci?</p>
+        </div>
+
+        <div class=" itm itm2"><img src="https://img.freepik.com/free-vector/delivery-logo-template_23-2147880262.jpg?size=626&ext=jpg&ga=GA1.1.435398978.1686940412&semt=ais" alt="" class="imges img2">
+        <h3>Lightinig Fast Delivery</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quia, at officiis dolorum temporibus voluptas.</p>
+        </div>
+
+
+        <div class="itm itm3"><img src="https://img.freepik.com/free-vector/safe-food-delivery-order-receive_23-2148549716.jpg?size=626&ext=jpg" alt="" class="imges img3">
+        <h3>Live Order Tracking</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio est autem inventore harum blanditiis necessitatibus!</p>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
