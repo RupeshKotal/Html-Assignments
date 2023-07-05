@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Responsive Nav BAr</title>
+
+    <style>
+        .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+      }
+
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      nav{
+        height: 50px;
+        display: flex;
+        background-color: #242b2e;
+        align-items: center;
+        padding: 5px;
+        
+      }
+      .large-screen{
+        /* display: flex; */
+        max-width: 1200px;
+        width: 100%;
+        justify-content: space-between;
+        margin: auto;
+        display: none;
+      }
+
+      .small-screen{
+        margin: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+
+
+      }
+
+      .small-screen >img{
+        /* width: 30px; */
+        height: 50px;
+      }
+
+      .large-screen > img{
+        height: 50px;
+      }
+
+      .nav-links{
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-links a{
+        text-decoration: none;
+        color: #fff;
+        margin-right: 25px;
+      }
+
+      .nav-links a:hover{
+        color: #76b5d3;
+        /* scale: 1.1; */
+      }
+
+      .large-screen button {
+        padding: 0px 40px;
+        margin: 10px 0px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #0072e1;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .large-screen button:hover {
+        scale: 1.1;
+        cursor: pointer;
+      }
+
+      @media screen and (min-width:800px) {
+        .large-screen{
+          display: flex;
+        }
+
+        .small-screen{
+          display: none;
+        }
+        
+      }
+    </style>
+</head>
+<body>
+    <nav>
+
+        <!-- For large Screen  -->
+
+        <section class="large-screen">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="logo">
+           <div class="nav-links">
+            <a href="#">home</a><a href="">Blog</a><a href="">About</a><a href="">Contact</a>
+           </div>
+           <button>Login</button>
+        </section>
+
+        <!-- For Small Screen -->
+
+        <section class="small-screen"> 
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="logo">
+            <div>
+              <span class="material-symbols-outlined"> menu </span>
+            </div>
+        </section>
+    </nav>
+</body>
+</html>
